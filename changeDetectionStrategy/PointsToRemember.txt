@@ -1,4 +1,4 @@
-Issue : Suppose we have more nested components ( i.e child or sub child components) and it has no dependency on parent component, when parent component has a change detection
+Need of ChangeDetectionStrategy.OnPush : Suppose we have more nested components ( i.e child or sub child components) and it has no dependency on parent component, when parent component has a change detection
 it makes all the child and subchild components to renrender unneccesarily to resolve this ChangeDetectionStrategy.OnPush comes into the picture. 
 
 @Component({
