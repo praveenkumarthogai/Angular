@@ -1,0 +1,17 @@
+Issue : Suppose we have more nested components ( i.e child or sub child components) and it has no dependency on parent component, when parent component has a change detection
+it makes all the child and subchild components to renrender unneccesarily to resolve this ChangeDetectionStrategy.OnPush comes into the picture. 
+
+@Component({
+changeDetection:ChangeDetectionStrategy.OnPush
+})
+
+when you add changeDetection:ChangeDetectionStrategy.OnPush inside the component decorator then the change detection doesn't run automatically anymore. 
+
+Instead, it listens Only for specific changes
+*) On @Input changes
+*) On @Output Emitter Events
+*) | async pipe when it receives observables
+*) explicitely registering the component to be checked using ChangeDetectorRef.detectChanges(); 
+
+
+Note : when @Input Data is in type of array or object don't mutate the value always re assign the value else change detection will not work.
