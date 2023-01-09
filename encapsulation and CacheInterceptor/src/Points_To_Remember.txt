@@ -1,0 +1,12 @@
+Encapsulation :
+
+Based on the Encapsulation value of the component the style of the component is scoped.
+
+Default : Emulate => style is scoped to specific component it will not create shadow
+
+ShadowDown => style is scoped and it will create shadow so that child component with none Encapsulation will apply same style as parent if child has no specific style
+
+None => style is not scoped to specific component it will  apply to all the components whose encapsulation is none or ShadowDown
+
+
+Recommended : default encapsulation

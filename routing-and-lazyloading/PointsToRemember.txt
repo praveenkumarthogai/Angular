@@ -1,0 +1,12 @@
+
+---Absolute url---To naviagte to specific component 
+  //router.navigateByUrl(' ---- String ----');
+
+--use relative url to navigate to children component(dynamic component inside parent component)---
+ //router.navigate([], {relativeTo: route})
+
+
+ {usehash:true}
+ http://localhost:4200/#/customers
+
+ Before hash production server will take care | after hash angular will take care of routing

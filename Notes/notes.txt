@@ -1,0 +1,3 @@
+lazyloading an module will create separate chunk js file in dist folder which will not be part of index.html file
+
+ng g interceptor [name]  creates an interceptor 
