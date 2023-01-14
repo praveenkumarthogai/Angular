@@ -1,0 +1,14 @@
+<p>ng-temlate works!</p>
+
+<ng-container *ngIf="isvalid;then templateOne else templateTwo">
+
+</ng-container>
+
+
+<ng-template #templateOne>
+    <h4> hello i'm from template one </h4>
+</ng-template>
+
+<ng-template #templateTwo>
+    <h4>hello i'm from template two</h4>
+</ng-template>

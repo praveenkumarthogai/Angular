@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GrandParentComponent } from './grand-parent/grand-parent.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ZoneComponent } from './ngZone/zone/zone.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ChildComponent } from './child/child.component';
     GrandParentComponent,
     ParentComponent,
     ChildComponent,
+    ZoneComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,10 +15,10 @@ export class CacheService {
   getFromCache(req: HttpRequest<any>): HttpResponse<any> | undefined {
     console.log('getFromCache');
     const url = req.urlWithParams;
-    debugger;
+    //debugger;
     const cachedResponse = this.cacheMap.get(url);
     if (!cachedResponse) {
-      debugger;
+     // debugger;
       return undefined;
     }
     return cachedResponse.res;

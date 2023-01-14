@@ -1,0 +1,5 @@
+<p>comm-parent works!</p>
+
+<button (click)="updateMessage()">updateMessageToChild</button>
+
+<app-comm-child #child [message]="message" (parentEmitter)="getMessageFromChild($event)"> </app-comm-child>

@@ -12,6 +12,13 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CacheInterceptor } from './CacheInterceptors/cache.interceptor';
 import { TestService } from './CacheInterceptors/test.service';
 import { HttpClientModule } from '@angular/common/http';
+import { CommParentComponent } from './Components Communication/comm-parent/comm-parent.component';
+import { CommChildComponent } from './Components Communication/comm-child/comm-child.component';
+import { NgTemlateComponent } from './NGTemplateAndContainer/ng-temlate/ng-temlate.component';
+import { LoginComponent } from './AuthGaurd/login/login.component';
+import { AuthService } from './AuthGaurd/auth.service';
+import { CandeactivateGaurdService } from './AuthGaurd/candeactivate-gaurd.service';
+import { DashboardComponent } from './AuthGaurd/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +27,12 @@ import { HttpClientModule } from '@angular/common/http';
     EmulateEncapsulationComponent,
     ShadowEncapsulationComponent,
     SubChildComponent,
-    RandomComponentComponent
+    RandomComponentComponent,
+    CommParentComponent,
+    CommChildComponent,
+    NgTemlateComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +45,9 @@ import { HttpClientModule } from '@angular/common/http';
       useClass: CacheInterceptor,
       multi: true,
     },
-    TestService
+    TestService,
+    AuthService,
+    CandeactivateGaurdService
   ],
   bootstrap: [AppComponent]
 })

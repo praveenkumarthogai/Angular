@@ -1,0 +1,72 @@
+/* .test-auto {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+} */
+
+/*
+
+//blog for centering a div
+https://blog.hubspot.com/website/center-div-css#:~:text=With%20CSS%2C%20you%20can%20center,content%20and%20align%2Ditems%20properties.
+
+margin:auto => will make horizontally centered not vertically centered
+
+
+
+*/
+
+/* rules for margin it applies for that element which has margin property
+The element must be block-level, e.g. display: block or display: table
+The element must not float
+The element must not have a fixed or absolute position1 */
+
+
+/*
+margin:auto can center vertically only absolutely positioned elements with known height (fiddle):
+
+.container {
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+another way of element centering http://jsfiddle.net/zfo0mn2r/8/
+*/
+
+
+.app-container{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+}
+
+.container{
+    border: 2px solid brown;
+    /* width: 600px; */
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
